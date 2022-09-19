@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 str1 = "Holberton"
 str2 = "School"
-strCon = str1 + str2
+strCon = f"{str1} {str2}"
 print(f"Welcome to {strCon}!")
