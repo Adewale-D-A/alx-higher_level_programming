@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
 class Square:
-    """Class Square that has attributes. Instantiation with size
-    Attributes:
-        size (int): The size of the square
+    """Class Square that defines a square object
     """
-
     def __init__(self, size):
-        """The __init__ method for Square class
+        """Initialize method that stores the size of the square
         Args:
-            size: (:obj: 'int'): A private instance size
+            param1 (int): size of the square
         """
         self.__size = size
