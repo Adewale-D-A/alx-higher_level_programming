@@ -1,21 +1,42 @@
-#!/usr/bin/python3
+#!/usr/bin/python3|
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 24 8:47:00 2022
+@author: Adewale
+"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """ Class that defines a rectangle from BaseGeometry Class """
-
+    """
+    A Rectangle class shape, inheirts from BaseGeometry
+    """
     def __init__(self, width, height):
-        """ Initializes instance """
+        """
+        init function for Rectangle
+        Attributes:
+            width (int): the width of the rectangle
+            height (int): the height of the rectangle
+        """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
 
-    def area(self):
-        """ Method that returns the area of the instance"""
-        return self.__width * self.__height
-
     def __str__(self):
-        """ Special method that returns the printable string """
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+        """
+        str funtion for rectangle
+        Returns:
+            Return width/height
+        """
+        return '[Rectangle] ' + str(self.__width) + '/' + str(self.__height)
+
+    def area(self):
+        """
+        Calculates the area of the rectangle
+        Return:
+           The area of the rectangle
+        """
+        return self.__width * self.__height
